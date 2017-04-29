@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		4C02B5061EB50C5600542A74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B5051EB50C5600542A74 /* AppDelegate.swift */; };
-		4C02B5081EB50C5600542A74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C02B5071EB50C5600542A74 /* ViewController.swift */; };
 		4C02B50B1EB50C5600542A74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C02B5091EB50C5600542A74 /* Main.storyboard */; };
 		4C02B50D1EB50C5600542A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C02B50C1EB50C5600542A74 /* Assets.xcassets */; };
 		4C02B5101EB50C5600542A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C02B50E1EB50C5600542A74 /* LaunchScreen.storyboard */; };
+		4CC0590D1EB531EC00C9135E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC0590C1EB531EC00C9135E /* logo.png */; };
+		4CC059101EB5330B00C9135E /* 001-key.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC0590E1EB5330B00C9135E /* 001-key.png */; };
+		4CC059111EB5330B00C9135E /* 002-phone-numbers-call.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC0590F1EB5330B00C9135E /* 002-phone-numbers-call.png */; };
+		4CC059131EB53C1A00C9135E /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC059121EB53C1A00C9135E /* RegisterController.swift */; };
+		4CC059151EB53C6A00C9135E /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC059141EB53C6A00C9135E /* SignInController.swift */; };
+		4CC059171EB53CD600C9135E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC059161EB53CD600C9135E /* TabBarController.swift */; };
+		4CC059191EB53D2000C9135E /* ContactsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC059181EB53D2000C9135E /* ContactsListController.swift */; };
+		4CC0591B1EB53D4500C9135E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0591A1EB53D4500C9135E /* ProfileController.swift */; };
+		4CC0591D1EB53D9600C9135E /* ContactDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0591C1EB53D9600C9135E /* ContactDetailsController.swift */; };
+		4CC0591F1EB53DC000C9135E /* AddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0591E1EB53DC000C9135E /* AddEditController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C02B5021EB50C5600542A74 /* Contactx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contactx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C02B5051EB50C5600542A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C02B5071EB50C5600542A74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C02B50A1EB50C5600542A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C02B50C1EB50C5600542A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C02B50F1EB50C5600542A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C02B5111EB50C5600542A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC0590C1EB531EC00C9135E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4CC0590E1EB5330B00C9135E /* 001-key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001-key.png"; sourceTree = "<group>"; };
+		4CC0590F1EB5330B00C9135E /* 002-phone-numbers-call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "002-phone-numbers-call.png"; sourceTree = "<group>"; };
+		4CC059121EB53C1A00C9135E /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		4CC059141EB53C6A00C9135E /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		4CC059161EB53CD600C9135E /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4CC059181EB53D2000C9135E /* ContactsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListController.swift; sourceTree = "<group>"; };
+		4CC0591A1EB53D4500C9135E /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		4CC0591C1EB53D9600C9135E /* ContactDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsController.swift; sourceTree = "<group>"; };
+		4CC0591E1EB53DC000C9135E /* AddEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +72,21 @@
 		4C02B5041EB50C5600542A74 /* Contactx */ = {
 			isa = PBXGroup;
 			children = (
+				4CC0590E1EB5330B00C9135E /* 001-key.png */,
+				4CC0590F1EB5330B00C9135E /* 002-phone-numbers-call.png */,
+				4CC0590C1EB531EC00C9135E /* logo.png */,
 				4C02B5051EB50C5600542A74 /* AppDelegate.swift */,
-				4C02B5071EB50C5600542A74 /* ViewController.swift */,
 				4C02B5091EB50C5600542A74 /* Main.storyboard */,
 				4C02B50C1EB50C5600542A74 /* Assets.xcassets */,
 				4C02B50E1EB50C5600542A74 /* LaunchScreen.storyboard */,
 				4C02B5111EB50C5600542A74 /* Info.plist */,
+				4CC059121EB53C1A00C9135E /* RegisterController.swift */,
+				4CC059141EB53C6A00C9135E /* SignInController.swift */,
+				4CC059161EB53CD600C9135E /* TabBarController.swift */,
+				4CC059181EB53D2000C9135E /* ContactsListController.swift */,
+				4CC0591A1EB53D4500C9135E /* ProfileController.swift */,
+				4CC0591C1EB53D9600C9135E /* ContactDetailsController.swift */,
+				4CC0591E1EB53DC000C9135E /* AddEditController.swift */,
 			);
 			path = Contactx;
 			sourceTree = "<group>";
@@ -123,6 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC059101EB5330B00C9135E /* 001-key.png in Resources */,
+				4CC0590D1EB531EC00C9135E /* logo.png in Resources */,
+				4CC059111EB5330B00C9135E /* 002-phone-numbers-call.png in Resources */,
 				4C02B5101EB50C5600542A74 /* LaunchScreen.storyboard in Resources */,
 				4C02B50D1EB50C5600542A74 /* Assets.xcassets in Resources */,
 				4C02B50B1EB50C5600542A74 /* Main.storyboard in Resources */,
@@ -136,8 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C02B5081EB50C5600542A74 /* ViewController.swift in Sources */,
+				4CC059151EB53C6A00C9135E /* SignInController.swift in Sources */,
+				4CC0591D1EB53D9600C9135E /* ContactDetailsController.swift in Sources */,
+				4CC059171EB53CD600C9135E /* TabBarController.swift in Sources */,
 				4C02B5061EB50C5600542A74 /* AppDelegate.swift in Sources */,
+				4CC059131EB53C1A00C9135E /* RegisterController.swift in Sources */,
+				4CC0591F1EB53DC000C9135E /* AddEditController.swift in Sources */,
+				4CC059191EB53D2000C9135E /* ContactsListController.swift in Sources */,
+				4CC0591B1EB53D4500C9135E /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +297,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Contactx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JETS.Contactx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -273,10 +311,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Contactx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JETS.Contactx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -299,6 +339,7 @@
 				4C02B5161EB50C5600542A74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
