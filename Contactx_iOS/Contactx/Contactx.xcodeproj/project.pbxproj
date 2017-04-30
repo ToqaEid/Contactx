@@ -25,6 +25,17 @@
 		4CF154F01EB5C38E0000DA2D /* GrpsContactsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF154EF1EB5C38E0000DA2D /* GrpsContactsListController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		4C92A4AF1EB5D80A0063A70F /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		4C02B5021EB50C5600542A74 /* Contactx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contactx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C02B5051EB50C5600542A74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +120,7 @@
 				4C02B5001EB50C5600542A74 /* Resources */,
 			);
 			buildRules = (
+				4C92A4AF1EB5D80A0063A70F /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
