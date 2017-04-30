@@ -21,6 +21,8 @@
 		4CC0591B1EB53D4500C9135E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0591A1EB53D4500C9135E /* ProfileController.swift */; };
 		4CC0591D1EB53D9600C9135E /* ContactDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0591C1EB53D9600C9135E /* ContactDetailsController.swift */; };
 		4CC0591F1EB53DC000C9135E /* AddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0591E1EB53DC000C9135E /* AddEditController.swift */; };
+		4CF154EE1EB5BFF90000DA2D /* GroupsListControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF154ED1EB5BFF90000DA2D /* GroupsListControllerTableViewController.swift */; };
+		4CF154F01EB5C38E0000DA2D /* GrpsContactsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF154EF1EB5C38E0000DA2D /* GrpsContactsListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		4CC0591A1EB53D4500C9135E /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		4CC0591C1EB53D9600C9135E /* ContactDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsController.swift; sourceTree = "<group>"; };
 		4CC0591E1EB53DC000C9135E /* AddEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditController.swift; sourceTree = "<group>"; };
+		4CF154ED1EB5BFF90000DA2D /* GroupsListControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsListControllerTableViewController.swift; sourceTree = "<group>"; };
+		4CF154EF1EB5C38E0000DA2D /* GrpsContactsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrpsContactsListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				4CC0591A1EB53D4500C9135E /* ProfileController.swift */,
 				4CC0591C1EB53D9600C9135E /* ContactDetailsController.swift */,
 				4CC0591E1EB53DC000C9135E /* AddEditController.swift */,
+				4CF154ED1EB5BFF90000DA2D /* GroupsListControllerTableViewController.swift */,
+				4CF154EF1EB5C38E0000DA2D /* GrpsContactsListController.swift */,
 			);
 			path = Contactx;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 			files = (
 				4CC059151EB53C6A00C9135E /* SignInController.swift in Sources */,
 				4CC0591D1EB53D9600C9135E /* ContactDetailsController.swift in Sources */,
+				4CF154F01EB5C38E0000DA2D /* GrpsContactsListController.swift in Sources */,
+				4CF154EE1EB5BFF90000DA2D /* GroupsListControllerTableViewController.swift in Sources */,
 				4CC059171EB53CD600C9135E /* TabBarController.swift in Sources */,
 				4C02B5061EB50C5600542A74 /* AppDelegate.swift in Sources */,
 				4CC059131EB53C1A00C9135E /* RegisterController.swift in Sources */,
