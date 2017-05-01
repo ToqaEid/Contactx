@@ -16,7 +16,28 @@ import javax.ws.rs.core.MediaType;
  */
 @Path("/test")
 public class Test {
-    @GET
+    
+    //Toqa
+    
+    //-----End Toqa
+    
+    //Marko
+    
+    //-----End Marko
+    
+    //Islam
+    
+    //-----End Islam
+    
+    //Samy
+    
+    //-----End Samy
+    
+    //Michael
+    
+    //-----End Michael
+    
+  @GET
   @Produces(MediaType.TEXT_PLAIN)
   @Path("/contacts")
   public String sayPlainTextHello() {
