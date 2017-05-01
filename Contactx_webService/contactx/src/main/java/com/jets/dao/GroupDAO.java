@@ -5,8 +5,10 @@
  */
 package com.jets.dao;
 
+import com.jets.contactx.entitiy.Group1;
 import com.jets.contactx.entitiy.GroupContactsCount;
 import java.util.ArrayList;
+import javax.persistence.EntityManager;
 
 /**
  *
@@ -15,10 +17,15 @@ import java.util.ArrayList;
 public class GroupDAO {
 
     public ArrayList<GroupContactsCount> getGroupsContactsCount(int userId) {
+        
+        EntityManager ent =  EntityManagerProvider.getEntityManager(EntityManagerProvider.GROUP_DAO);
+        //Samy
         return null;
     }
 
-    public ArrayList<String> getGroupsNames(int userId) {
+    public ArrayList<Group1> getGroups(int userId) {
+        EntityManager ent =  EntityManagerProvider.getEntityManager(EntityManagerProvider.GROUP_DAO);
+        //Samy
         return null;
     }
 }

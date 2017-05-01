@@ -7,8 +7,6 @@ package com.jets.dao;
 
 import com.jets.contactx.entitiy.*;
 import java.util.ArrayList;
-import org.hibernate.Session;
-
 /**
  *
  * @author Eslam
@@ -16,26 +14,32 @@ import org.hibernate.Session;
 public class ContactDAO {
 
     public ArrayList<Contact> getAllContacts(int userId) {
+        //Islam
         return null;
     }
 
     public ArrayList<Contact> getGroupContacts(int userId, int groupId) {
+        //Islam
         return null;
     }
 
     public Contact getContactDetails(int contactId) {
+        //Islam
         return null;
     }
 
     public boolean addOrUpdateContact(Contact contact) {
+        //Marko
         return false;
     }
 
     public boolean deleteContact(int contactId) {
+        //Marko
         return false;
     }
 
     public boolean purgeContacts(int userId) {
+        //Marko
         return false;
     }
 

@@ -15,9 +15,9 @@ import javax.persistence.Persistence;
  */
 public class EntityManagerProvider {
     
-    private static final String CONTACT_DAO = "contact";
-    private static final String GROUP_DAO = "group";
-    private static final String USER_DAO = "user";
+    public static final String CONTACT_DAO = "contact";
+    public  static final String GROUP_DAO = "group";
+    public  static final String USER_DAO = "user";
     
     /**
      * provides unique EntityManager for each DAO

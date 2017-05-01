@@ -13,18 +13,22 @@ import org.hibernate.Session;
 public class UserDAO {
     
     public boolean validateUser(User user){
+        //TOQA
         return false;
     }
     
     public User getUser(int userId){
+        //TOQA
         return null;
     }
     
     public boolean validateUniquePhone(String phone){
+        //TOQA
         return false;
     }
     
     public boolean addOrUpdateUser(User user){
+        //TOQA
         return false;
     }
 }
