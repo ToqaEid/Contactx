@@ -8,6 +8,7 @@ package com.jets.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceUnit;
 
 /**
  *
@@ -24,7 +25,10 @@ public class EntityManagerProvider {
      * @param dao
      * @return 
      */
+//    @PersistenceUnit
+//    static EntityManagerFactory factory;
     public static EntityManager getEntityManager(String dao){
+        
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("Hibernate");
         EntityManager entityManager = factory.createEntityManager();
         return entityManager;

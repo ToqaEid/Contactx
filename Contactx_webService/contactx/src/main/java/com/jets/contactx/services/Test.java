@@ -7,6 +7,8 @@ package com.jets.contactx.services;
 
 import com.jets.contactx.entitiy.Contact;
 import com.jets.contactx.entitiy.Phone;
+import com.jets.contactx.entitiy.User;
+import com.jets.dao.UserDAO;
 import java.util.ArrayList;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
@@ -23,7 +25,51 @@ import javax.ws.rs.core.MediaType;
 public class Test {
     
     //Toqa
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/uservalid")
+    public Boolean userDao() {
+
+      User user = new User(1, "01008894627", "Toqa", "1234");
+      UserDAO userDao = new UserDAO();
+      return userDao.validateUser(user);
+      
+    }
     
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/phonevalid")
+    public Boolean userPhone() {
+
+      UserDAO userDao = new UserDAO();
+      return userDao.validateUniquePhone("01008894627");
+      
+    }
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/getUser")
+    public User getUser() {
+
+      UserDAO userDao = new UserDAO();
+      return userDao.getUser(2);
+      
+    }
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/saveUser")
+    public User saveUser() {
+
+      User user = new User();
+      user.setName("Mirna");
+      user.setPassword("12345");
+      user.setPhoneNo("01000000000");
+      UserDAO userDao = new UserDAO();
+      return userDao.addOrUpdateUser(user);
+      
+    }
+
     //-----End Toqa
     
     //Marko
