@@ -70,7 +70,9 @@ public class UserDAO {
         //TOQA
         
         EntityManager entityManager = EntityManagerProvider.getEntityManager(EntityManagerProvider.USER_DAO);
+        entityManager.getTransaction().begin();
         entityManager.persist(user);
+        entityManager.getTransaction().commit();
         return user;
     }
 }
