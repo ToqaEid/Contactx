@@ -21,7 +21,7 @@ USE `Contactx` ;
 -- Table `Contactx`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Contactx`.`user` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `phone_no` VARCHAR(12) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
@@ -35,7 +35,7 @@ ENGINE = InnoDB;
 -- Table `Contactx`.`group`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Contactx`.`group` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC))
@@ -46,7 +46,7 @@ ENGINE = InnoDB;
 -- Table `Contactx`.`contact`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Contactx`.`contact` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `img_path` VARCHAR(45) NULL,
   `title` VARCHAR(45) NULL,
@@ -60,7 +60,7 @@ ENGINE = InnoDB;
 -- Table `Contactx`.`phone`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Contactx`.`phone` (
-  `id` INT NOT NULL COMMENT '	',
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT '	',
   `phone_no` VARCHAR(45) NOT NULL COMMENT '	',
   `type` VARCHAR(45) NOT NULL,
   `contacts_id` INT NOT NULL,
@@ -78,7 +78,7 @@ ENGINE = InnoDB;
 -- Table `Contactx`.`email`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Contactx`.`email` (
-  `id` INT NOT NULL,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(45) NOT NULL,
   `type` VARCHAR(45) NOT NULL,
   `contacts_id` INT NOT NULL,
@@ -96,7 +96,7 @@ ENGINE = InnoDB;
 -- Table `Contactx`.`address`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Contactx`.`address` (
-  `idaddress` INT NOT NULL,
+  `idaddress` INT NOT NULL AUTO_INCREMENT,
   `address` VARCHAR(100) NOT NULL,
   `type` VARCHAR(45) NOT NULL,
   `contacts_id` INT NOT NULL,
