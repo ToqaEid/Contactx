@@ -5,6 +5,7 @@
  */
 package com.jets.contactx.services;
 
+import com.jets.contactx.entitiy.utilityclasses.ReturnObject;
 import com.jets.contactx.entitiy.User;
 import com.jets.dao.UserDAO;
 import javax.ws.rs.Consumes;
@@ -14,7 +15,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- *
+ *  
  * @author michael
  */
 
@@ -23,41 +24,34 @@ public class UserServices {
     
   /*-------------- Login -------------*/
   @POST
+  @Consumes(MediaType.APPLICATION_JSON)
   @Produces(MediaType.APPLICATION_JSON)
   @Path("/login")
-  public String login() {
-    return "Mr7ababak - User";
-  }
-  
-  /*-------------- Register -------------*/
-  @POST
-  @Consumes(MediaType.APPLICATION_JSON)
-  @Produces(MediaType.APPLICATION_JSON)
-  @Path("/register")
-  public String register(User user) {
-      UserDAO db = new UserDAO();
-      if(db.validateUniquePhone(user.getPhoneNo())){
-          db.addOrUpdateUser(user);
-          return "";
-      }else{
-          return "";
-      }
-  }
-  
-  /*-------------- Update -------------*/
-  @POST
-  @Consumes(MediaType.APPLICATION_JSON)
-  @Produces(MediaType.APPLICATION_JSON)
-  @Path("/update")
-  public String updateUser(User user) {
+  public ReturnObject login(User user) {
+      
+      System.out.println("login");
     UserDAO db = new UserDAO();
-      if(db.validateUniquePhone(user.getPhoneNo())){
-          db.addOrUpdateUser(user);
-          return "";
-      }else{
-          return "";
-      }
+    Object validateReturn  = db.validateUser(user);
+    if(validateReturn instanceof User){
+        return new ReturnObject("success","valid user", user);
+    }
+    return new ReturnObject("failure", (String) validateReturn, null);
   }
+  
+  /*-------------- Register OR Update -------------*/
+  @POST
+  @Consumes(MediaType.APPLICATION_JSON)
+  @Produces(MediaType.APPLICATION_JSON)
+  @Path("/saveUser")
+  public ReturnObject register(User user) {
+      UserDAO db = new UserDAO();
+        user = db.addOrUpdateUser(user);
+        if(user != null){
+            return new ReturnObject("success","user saved successfully", user);
+        }
+        return new ReturnObject("failure", "failed to save user", null);
+  }
+  
   
   
 }

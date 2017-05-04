@@ -15,11 +15,49 @@ import javax.persistence.TypedQuery;
  */
 public class UserDAO {
     
-    public boolean validateUser(User user){
+    public Object validateUser(User user){
         //TOQA
         
         EntityManager entityManager = EntityManagerProvider.getEntityManager(EntityManagerProvider.USER_DAO);
-        Query query = entityManager.createQuery(
+        
+        List<User> usersResult = checkPhoneUniqueness(entityManager, user);
+        
+        if(!usersResult.isEmpty()){  //valid phoneNo
+     
+            List<User> usersResult2 = getUser(entityManager, user);
+
+            if(!usersResult2.isEmpty()) //valid phone & password
+                return usersResult2.get(0);  
+            
+            else    //invalid phone & pass
+                return "invalid Phone Number or Password";               
+        }
+        return "invalid Phone Number";
+    }
+    
+    public User addOrUpdateUser(User user){
+        //TOQA
+        
+        EntityManager entityManager = EntityManagerProvider.getEntityManager(EntityManagerProvider.USER_DAO);
+        
+        List<User> usersResult = checkPhoneUniqueness(entityManager, user);
+        
+        if(usersResult.isEmpty()){  //phone number is unique
+            /*== add or update user ==*/
+            entityManager.getTransaction().begin();
+            entityManager.persist(user);
+            entityManager.getTransaction().commit();
+            return user;
+            
+        }
+        return null;
+   
+    }
+    
+    /*=============================== UTILITY METHODS (Queries Preparations)=================================*/
+    
+    private List<User> getUser(EntityManager entityManager, User user){
+        Query query2 = entityManager.createQuery(
                     "SELECT u "
                   + "FROM User AS u "
                   + "WHERE u.phoneNo = :phone "
@@ -28,51 +66,13 @@ public class UserDAO {
                 .setParameter("phone", user.getPhoneNo())
                 .setParameter("password", user.getPassword());
                 
-        
-        List<User> usersResult = query.getResultList();
-        
-        if(!usersResult.isEmpty())
-            return true;    //exists before
-        
-        return false;   //doesn't exist
+            return query2.getResultList();
     }
     
-    public User getUser(int userId){
-        //TOQA
-        EntityManager entityManager = EntityManagerProvider.getEntityManager(EntityManagerProvider.USER_DAO);
-        TypedQuery<User> query = entityManager.createNamedQuery("User.findById", User.class )
-                                    .setParameter("id", userId);
-                          
-        List<User> usersResult = query.getResultList();
-        
-        if(!usersResult.isEmpty())
-            return usersResult.get(0);
-        
-        return null;
-    }
-    
-    public boolean validateUniquePhone(String phone){
-        //TOQA
-        
-        EntityManager entityManager = EntityManagerProvider.getEntityManager(EntityManagerProvider.USER_DAO);
+    private List<User> checkPhoneUniqueness(EntityManager entityManager, User user){
         Query query = entityManager.createNamedQuery("User.findByPhoneNo", User.class )
-                                    .setParameter("phoneNo", phone);
-                          
-        List<User> usersResult = query.getResultList();
-        
-        if(!usersResult.isEmpty())
-            return true;
-        
-        return false;
-    }
-    
-    public User addOrUpdateUser(User user){
-        //TOQA
-        
-        EntityManager entityManager = EntityManagerProvider.getEntityManager(EntityManagerProvider.USER_DAO);
-        entityManager.getTransaction().begin();
-        entityManager.persist(user);
-        entityManager.getTransaction().commit();
-        return user;
-    }
+                                    .setParameter("phoneNo", user.getPhoneNo());
+                   
+        return query.getResultList();
+    }  
 }
