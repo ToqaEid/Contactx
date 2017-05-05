@@ -10,6 +10,15 @@ import UIKit
 
 class SignInController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet weak var phoneField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+    
+    @IBAction func SignInAction(sender: AnyObject) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
